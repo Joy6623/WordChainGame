@@ -92,9 +92,12 @@ def use_power(power):
         return False  # No prop available, cannot use
 
     if power == 'shuffle':
-        power_ups[power] -= 1  # Use once
-        init_grid()  # Regenerate the alphabet
+        global selected
+        power_ups[power] -= 1
+        init_grid()
+        selected = []  # Clear the positions of the previously selected letters
         print("Grid shuffled!")
+
 
     elif power == 'freeze':
         power_ups[power] -= 1  # Use once
@@ -114,6 +117,8 @@ def use_power(power):
             grid[y][x] = random.choice(string.ascii_lowercase)
         score += 5
         print("Bomb used on selection, +5 points!")
+        selected = []
+
 
     else:
         print("Unknown power-up!")
