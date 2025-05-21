@@ -20,7 +20,7 @@ Enter column letter (a-h)
 'q' to quit
 
 # Usage
-1️. The game begins
+##1️. The game begins
 Automatic execution:
 Load the word library (from words.txt or the default word library)
 Initialize an 8×8 random letter grid
@@ -28,7 +28,7 @@ Output effect:
 Display the score, the number of props, and the letter grid
 Hint: Controls row and column input methods, props (s, f, b, e, q)
 
-2️. The player selects the letter
+##2️. The player selects the letter
 Input:
 First, enter row numbers 1 to 8, and then enter column numbers a to h
 Rule:
@@ -38,7 +38,7 @@ The same grid cannot be selected repeatedly
 Effect:
 Display the string composed of the currently Selected letters (such as Selected: C A T)
 
-3️. Judge whether it is a legal word
+##3️. Judge whether it is a legal word
 Input:
 Input e (representing Enter or Evaluate)
 Condition:
@@ -47,9 +47,10 @@ Effect:
 If the spelled word exists in words.txt ➜ bonus points (10 points × number of letters), replace the selected letter
 If there is no ➜ display "not in dictionary", no bonus points
 
-4️. Keep playing
+##4️. Keep playing
 Repeat 2️ and 3️, and continue to choose the letters ➜ to form the word ➜ to judge ➜ score
 💥 Special item usage and effects:
+
 🔄 s ➜ Shuffle
 Usage time: When good words cannot be spelled out in the grid
 Effect:
